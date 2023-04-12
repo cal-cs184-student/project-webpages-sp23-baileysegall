@@ -20,30 +20,30 @@
 		
 		<h4>Describe the effects of changing the spring constant `ks`; how does the cloth behave from start to rest with a very low `ks`? A high `ks`?</h4>
 		<div>
-			<img />
-			<img />
-			<img />
-			<img />
+			<img src="project-webpages-sp23-baileysegall/proj4/ks1000.png" />
+			<img src="project-webpages-sp23-baileysegall/proj4/ks2500.png" />
+			<img src="project-webpages-sp23-baileysegall/proj4/ks10000.png" />
+			<img src="project-webpages-sp23-baileysegall/proj4/ks15000.png" />
 		</div>
 		
 		<h4>how about density</h4>
 		<div>
-			<img />
-			<img />
-			<img />
-			<img />
+			<img src="project-webpages-sp23-baileysegall/proj4/density5.png" />
+			<img src="project-webpages-sp23-baileysegall/proj4/density10.png" />
+			<img src="project-webpages-sp23-baileysegall/proj4/density15.png" />
+			<img src="project-webpages-sp23-baileysegall/proj4/density30.png" />
 		</div>
 		
-		<h4>how about dampling</h4>
+		<h4>how about damping</h4>
 		<div>
-			<img />
-			<img />
-			<img />
-			<img />
+			<img src="project-webpages-sp23-baileysegall/proj4/damping0.png"/>
+			<img src="project-webpages-sp23-baileysegall/proj4/damping0.5.png"/>
+			<img src="project-webpages-sp23-baileysegall/proj4/damping1.png"/>
+
 		</div>
 		
 		<h4> Show us a screenshot of your shaded cloth from scene/pinned4.json in its final resting state! If you choose to use different parameters than the default ones, please list them. </h4>
-		<img />
+		<img src="project-webpages-sp23-baileysegall/proj4/pinned4.png"/>
 		
 		<h2>Part 3 Writeup</h2>
 		
@@ -52,34 +52,120 @@
 		</div>
 		
 		<h3> Show us a screenshot of your shaded cloth lying peacefully at rest on the plane. If you haven't by now, feel free to express your colorful creativity with the cloth! (You will need to complete the shaders portion first to show custom colors.)</h3>
-		<img />
+		<img src="project-webpages-sp23-baileysegall/proj4/shaded_cloth.png"/>
 		
 		<h2>Part 4 Writeup</h2>
 		
 		<h3>Show us at least 3 screenshots that document how your cloth falls and folds on itself, starting with an early, initial self-collision and ending with the cloth at a more restful state (even if it is still slightly bouncy on the ground). </h3>
 		<div>
-			<img />
-			<img />
-			<img />
-			<img />
+			<img src="project-webpages-sp23-baileysegall/proj4/cloth_fall_1.png"/>
+			<img src="project-webpages-sp23-baileysegall/proj4/cloth_fall_2.png"/>
+			<img src="project-webpages-sp23-baileysegall/proj4/cloth_fall_3.png"/>
+			<img src="project-webpages-sp23-baileysegall/proj4/cloth_fall_4.png"/>
 		</div>
 		
 		<h3>varying density</h3>
 		<div>
-			<img />
-			<img />
-			<img />
-			<img />
+			<img src="project-webpages-sp23-baileysegall/proj4/p4_density5.png"/>
+			<img src="project-webpages-sp23-baileysegall/proj4/p4_density10.png"/>
+			<img src="project-webpages-sp23-baileysegall/proj4/p4_density20.png"/>
+			<img src="project-webpages-sp23-baileysegall/proj4/p4_density100.png"/>
 		</div>
 		
 		<h3>varying KS</h3>
 		<div>
-			<img />
-			<img />
-			<img />
-			<img />
+			<img src="project-webpages-sp23-baileysegall/proj4/Screenshot 2023-04-11 at 12.48.39 PM.png"/>
+			<img src="project-webpages-sp23-baileysegall/proj4/Screenshot 2023-04-11 at 12.47.43 PM.png"/>
+			<img src="project-webpages-sp23-baileysegall/proj4/Screenshot 2023-04-11 at 12.47.22 PM.png"/>
+			<img src="project-webpages-sp23-baileysegall/proj4/Screenshot 2023-04-10 at 10.45.00 AM.png"/>
+			<img src="project-webpages-sp23-baileysegall/proj4/Screenshot 2023-04-10 at 10.44.34 AM.png" />
+			<img src="project-webpages-sp23-baileysegall/proj4/Screenshot 2023-04-10 at 10.44.12 AM.png" />
 		</div>
 		
 		<h2>Part 5 Writeup</h2>
+		<h3>Explain in your own words what is a shader program and how vertex and fragment shaders work together to create lighting and material effects.</h3>
+		<p>A shader program is responsible for taking a 3 dimensional model and transforming it into a 2 dimensional image we can render on our screen. The stylistic design choices which determine how we do this, such as how to represent depth or texture is defined within the shader program. </p>
+		<p>The shader program is made up of vertex and fragment shaders which work together to create a full render. The vertex shader takes the vertices from the 3D model and transforms them into 2D space. </p>
+		<p>The fragment shader then takes these coordinates and determines the color that the pixels coordinating to that vertex should be. This is done using the lighting, material and depth which creates the 3 dimensional effect on the 2 dimensional screen. </p>
+		
+		<h3>Explain the Blinn-Phong shading model in your own words. Show a screenshot of your Blinn-Phong shader outputting only the ambient component, a screen shot only outputting the diffuse component, a screen shot only outputting the specular component, and one using the entire Blinn-Phong model.</h3>
+		<p>The blinn-Phong shading model is a combination of ambient, diffuse, and specular lighting. It takes the combination of all of these things adds them together and then combines them to determine the weight of the pixel coloring. </p>
+		
+		<h3>Only Ambient</h3>
+		<div>
+			<img src="project-webpages-sp23-baileysegall/proj4/" />
+			<img src="project-webpages-sp23-baileysegall/proj4/" />
+		</div>
+		
+		<h3>Only Diffuse</h3>
+		<div>
+			<img src="project-webpages-sp23-baileysegall/proj4/" />
+			<img src="project-webpages-sp23-baileysegall/proj4/" />
+		</div>
+		
+		<h3>Only Specular</h3>
+		<div>
+			<img src="project-webpages-sp23-baileysegall/proj4/" />
+			<img src="project-webpages-sp23-baileysegall/proj4/" />
+		</div>
+		
+		<h3>Both</h3>
+		<div>
+			<img src="project-webpages-sp23-baileysegall/proj4/" />
+			<img src="project-webpages-sp23-baileysegall/proj4/" />
+		</div>
+		
+		<h3>Show a screenshot of your texture mapping shader using your own custom texture by modifying the textures in /textures/.</h3>
+		<div>
+			<img src="project-webpages-sp23-baileysegall/proj4/" />
+			<img src="project-webpages-sp23-baileysegall/proj4/" />
+		</div>
+		
+		<h3>Show a screenshot of bump mapping on the cloth and on the sphere. </h3>
+		<div>
+			<img src="project-webpages-sp23-baileysegall/proj4/" />
+			<img src="project-webpages-sp23-baileysegall/proj4/" />
+		</div>
+		
+		<h3>Show a screenshot of displacement mapping on the sphere. </h3>
+		<div>
+			<img src="project-webpages-sp23-baileysegall/proj4/" />
+			<img src="project-webpages-sp23-baileysegall/proj4/" />
+		</div>
+		
+		<h3>Compare the two approaches and resulting renders in your own words. </h3>
+		<p>The two approaches are very similar if you are looking just at the pattern on the middle of the cloth. The bump gives the appearance of texture when it comes to lighting so we see the light and shadow showing up in the pixel coloring. However if you look at the outline of the images, you can see that we don’t see any texture. When we add displacement we can see that the cloth now has a 3 dimensional texture which we can see in the outline as well. </p>
+		
+		<h3>Compare how your the two shaders react to the sphere by changing the sphere mesh's coarseness by using o 16 -a 16 and then o 128 -a 128.</h3>
+		<p>o 16 -a 16</p>
+		<div>
+			<div>
+				<img src="project-webpages-sp23-baileysegall/proj4/" />
+				<img src="project-webpages-sp23-baileysegall/proj4/" />
+			</div>
+			<div>
+				<img src="project-webpages-sp23-baileysegall/proj4/" />
+				<img src="project-webpages-sp23-baileysegall/proj4/" />
+			</div>
+		</div>
+		
+		<p>o 128 -a 128</p>
+		<div>
+			<div>
+				<img src="project-webpages-sp23-baileysegall/proj4/" />
+				<img src="project-webpages-sp23-baileysegall/proj4/" />
+			</div>
+			<div>
+				<img src="project-webpages-sp23-baileysegall/proj4/" />
+				<img src="project-webpages-sp23-baileysegall/proj4/" />
+			</div>
+		</div>
+		
+		<h3>Show a screenshot of your mirror shader on the cloth and on the sphere. </h3>
+		<div>
+			<img src="project-webpages-sp23-baileysegall/proj4/" />
+			<img src="project-webpages-sp23-baileysegall/proj4/" />
+		</div>
+		
 	</body>
 </html>
